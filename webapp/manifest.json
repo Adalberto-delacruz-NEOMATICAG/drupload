@@ -81,6 +81,11 @@
           "bundleName": "zdr.upload.drupload.i18n.i18n"
         }
       },
+
+      "ui": {
+  "type": "sap.ui.model.json.JSONModel",
+  "settings": { "isEditable": true }
+},
       "": {
         "dataSource": "mainService",
         "preload": true,
@@ -132,7 +137,7 @@
                 "@com.sap.vocabularies.UI.v1.LineItem": {
                   "actions": {
                     "ListPage": {
-                      "press": "zdr.upload.drupload.ext.Test.openSpreadsheetUploadDialog",
+                      "press": "zdr.upload.drupload.ext.controller.ListReportController.openSpreadsheetUploadDialog",
                       "visible": true,
                       "enabled": true,
                       "requiresSelection": false,
@@ -185,8 +190,7 @@
         "sap.ui.controllerExtensions": {
           "sap.fe.templates.ListReport.ListReportController": {
             "controllerNames": [
-              "zdr.upload.drupload.ext.controller.ListPage",
-              "zdr.upload.drupload.ext.controller.ListReportNew"
+           
             ]
           }
         }
